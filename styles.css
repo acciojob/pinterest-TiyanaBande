@@ -1,1 +1,45 @@
 /*  your css code here. If applicable */
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflow for image */
+    color: white;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire container */
+    position: absolute; /* Position behind the content */
+    top: 0;
+    left: 0;
+}
+
+.hero-content {
+    position: relative; /* Ensure it’s above the image */
+    text-align: center; /* Center the text */
+    z-index: 1; /* Bring content above image */
+}
+
+.explore-button {
+    padding: 10px 20px; /* Padding for button */
+    background-color: #e60023; /* Button color */
+    color: white; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.explore-button:hover {
+    background-color: #c6001c; /* Darker shade on hover */
+}
